@@ -1,4 +1,4 @@
-/*function clima (estaLloviendo){
+function clima (estaLloviendo){
     if(estaLloviendo){
         console.log("si esta lloviendo")
     }
@@ -69,35 +69,30 @@ function calculadora(){
 }
 console.log(calculadora())
 
-//crea un funcion llamada calculadoraquereciba3parametrosunstringllamadoopeaciony2numeros llamados (num1 y num2)elstring nos debe indicar qeu tipo eoperacion se llevara a cabo entre num1 y num2 hacer suma resta divicion multiplicacion y exponente*/
+//crea un funcion llamada calculadora que reciba 3 parametros unstring llamado operacion y 2 umeros llamados (num1 y num2)elstring nos debe indicar que tipo eoperacion se llevara a cabo entre num1 y num2 hacer suma resta divicion multiplicacion y exponente
 
-
-function calculadora(operacion, num1, num2) {
-    let resultado = 0;
-    switch(operacion) {
-      case "suma":
-        resultado = num1 + num2;
-        break;
-      case "resta":
-        resultado = num1 - num2;
-        break;
-      case "multiplicacion":
-        resultado = num1 * num2;
-        break;
-      case "division":
+  function calculadora(operacion, num1, num2) {
+    switch (operacion) {
+      case 'suma':
+        return num1 + num2;
+      case 'resta':
+        return num1 - num2;
+      case 'multiplicacion':
+        return num1 * num2;
+      case 'division':
         if (num2 !== 0) {
-          resultado = num1 / num2;
+          return num1 / num2;
         } else {
-          console.log("No se puede dividir entre cero");
+          return 'No se puede divider';
         }
-        break;
-      case "exponente":
-        resultado = num1 ** num2;
-        break;
+      case 'exponente':
+        let resultado = 1;
+        for (let i = 0; i < num2; i++) {
+          resultado *= num1;
+        }
+        return resultado;
       default:
-        console.log("Operación no válida");
+        return 'Operación no válida';
     }
-    return resultado;
   }
-
 
