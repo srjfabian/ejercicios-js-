@@ -69,7 +69,7 @@ function calculadora(){
 }
 console.log(calculadora())
 
-//crea un funcion llamada calculadora que reciba 3 parametros unstring llamado operacion y 2 umeros llamados (num1 y num2)elstring nos debe indicar que tipo eoperacion se llevara a cabo entre num1 y num2 hacer suma resta divicion multiplicacion y exponente
+//crea un funcion llamada calculadora qu3e reciba 3 parametros unstring llamado operacion y 2 umeros llamados (num1 y num2)elstring nos debe indicar que tipo eoperacion se llevara a cabo entre num1 y num2 hacer suma resta divicion multiplicacion y exponente
 
   function calculadora(operacion, num1, num2) {
     switch (operacion) {
